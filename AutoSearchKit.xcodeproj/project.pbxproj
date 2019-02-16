@@ -10,6 +10,15 @@
 		2A51D6B42217E1A300F9DDE6 /* AutoSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A51D6AA2217E1A300F9DDE6 /* AutoSearchKit.framework */; };
 		2A51D6B92217E1A300F9DDE6 /* AutoSearchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6B82217E1A300F9DDE6 /* AutoSearchKitTests.swift */; };
 		2A51D6BB2217E1A300F9DDE6 /* AutoSearchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A51D6AD2217E1A300F9DDE6 /* AutoSearchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A51D6C82217E1EA00F9DDE6 /* AutoSearchConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */; };
+		2A51D6C92217E1EA00F9DDE6 /* AutoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6C62217E1E900F9DDE6 /* AutoSearchViewController.swift */; };
+		2A51D6CA2217E1EA00F9DDE6 /* AutoSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */; };
+		2A51D6CF2217E22600F9DDE6 /* GeofencedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6CC2217E22500F9DDE6 /* GeofencedViewController.swift */; };
+		2A51D6D02217E22600F9DDE6 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6CD2217E22500F9DDE6 /* AddGeotificationViewController.swift */; };
+		2A51D6D12217E22600F9DDE6 /* GeofencedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6CE2217E22500F9DDE6 /* GeofencedPoint.swift */; };
+		2A51D6D52217E28A00F9DDE6 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D32217E28A00F9DDE6 /* BrowserViewController.swift */; };
+		2A51D6D62217E28A00F9DDE6 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D42217E28A00F9DDE6 /* WebClient.swift */; };
+		2A51D6D82217E31600F9DDE6 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D72217E31600F9DDE6 /* JsonParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,15 @@
 		2A51D6B32217E1A300F9DDE6 /* AutoSearchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoSearchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A51D6B82217E1A300F9DDE6 /* AutoSearchKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchKitTests.swift; sourceTree = "<group>"; };
 		2A51D6BA2217E1A300F9DDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSearchConst.swift; sourceTree = "<group>"; };
+		2A51D6C62217E1E900F9DDE6 /* AutoSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSearchViewController.swift; sourceTree = "<group>"; };
+		2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSearchResult.swift; sourceTree = "<group>"; };
+		2A51D6CC2217E22500F9DDE6 /* GeofencedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencedViewController.swift; sourceTree = "<group>"; };
+		2A51D6CD2217E22500F9DDE6 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
+		2A51D6CE2217E22500F9DDE6 /* GeofencedPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencedPoint.swift; sourceTree = "<group>"; };
+		2A51D6D32217E28A00F9DDE6 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		2A51D6D42217E28A00F9DDE6 /* WebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
+		2A51D6D72217E31600F9DDE6 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,8 @@
 		2A51D6AC2217E1A300F9DDE6 /* AutoSearchKit */ = {
 			isa = PBXGroup;
 			children = (
+				2A51D6D22217E25A00F9DDE6 /* Web */,
+				2A51D6C42217E1B100F9DDE6 /* AutoSearch */,
 				2A51D6AD2217E1A300F9DDE6 /* AutoSearchKit.h */,
 				2A51D6AE2217E1A300F9DDE6 /* Info.plist */,
 			);
@@ -84,6 +104,37 @@
 				2A51D6BA2217E1A300F9DDE6 /* Info.plist */,
 			);
 			path = AutoSearchKitTests;
+			sourceTree = "<group>";
+		};
+		2A51D6C42217E1B100F9DDE6 /* AutoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D6CB2217E1FD00F9DDE6 /* GeoLoc */,
+				2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */,
+				2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */,
+				2A51D6C62217E1E900F9DDE6 /* AutoSearchViewController.swift */,
+			);
+			path = AutoSearch;
+			sourceTree = "<group>";
+		};
+		2A51D6CB2217E1FD00F9DDE6 /* GeoLoc */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D6CD2217E22500F9DDE6 /* AddGeotificationViewController.swift */,
+				2A51D6CE2217E22500F9DDE6 /* GeofencedPoint.swift */,
+				2A51D6CC2217E22500F9DDE6 /* GeofencedViewController.swift */,
+			);
+			path = GeoLoc;
+			sourceTree = "<group>";
+		};
+		2A51D6D22217E25A00F9DDE6 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2A51D6D72217E31600F9DDE6 /* JsonParser.swift */,
+				2A51D6D32217E28A00F9DDE6 /* BrowserViewController.swift */,
+				2A51D6D42217E28A00F9DDE6 /* WebClient.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +199,7 @@
 				TargetAttributes = {
 					2A51D6A92217E1A300F9DDE6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					2A51D6B22217E1A300F9DDE6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A51D6C82217E1EA00F9DDE6 /* AutoSearchConst.swift in Sources */,
+				2A51D6D52217E28A00F9DDE6 /* BrowserViewController.swift in Sources */,
+				2A51D6CA2217E1EA00F9DDE6 /* AutoSearchResult.swift in Sources */,
+				2A51D6C92217E1EA00F9DDE6 /* AutoSearchViewController.swift in Sources */,
+				2A51D6D02217E22600F9DDE6 /* AddGeotificationViewController.swift in Sources */,
+				2A51D6CF2217E22600F9DDE6 /* GeofencedViewController.swift in Sources */,
+				2A51D6D12217E22600F9DDE6 /* GeofencedPoint.swift in Sources */,
+				2A51D6D62217E28A00F9DDE6 /* WebClient.swift in Sources */,
+				2A51D6D82217E31600F9DDE6 /* JsonParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +402,7 @@
 		2A51D6BF2217E1A300F9DDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcal.AutoSearchKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +429,7 @@
 		2A51D6C02217E1A300F9DDE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +455,7 @@
 		2A51D6C22217E1A300F9DDE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C98XPK248W;
 				INFOPLIST_FILE = AutoSearchKitTests/Info.plist;
@@ -409,6 +474,7 @@
 		2A51D6C32217E1A300F9DDE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C98XPK248W;
 				INFOPLIST_FILE = AutoSearchKitTests/Info.plist;
