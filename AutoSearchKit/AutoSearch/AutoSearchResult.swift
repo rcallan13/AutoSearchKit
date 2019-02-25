@@ -8,21 +8,21 @@
 
 import Foundation
 
-struct AutoSearchResult {
-    static var count = 1
-    var title: String?
-    var htmlTitle: String?
-    var thumbnail: String?
-    var image: String?
-    var link: String?
-    var formattedLink: String?
-    var displayLink: String?
-    var ratingvalue: String?
-    var reviewCount: Int?
+public struct AutoSearchResult {
+    public static var count = 1
+    public var title: String?
+    public var htmlTitle: String?
+    public var thumbnail: String?
+    public var image: String?
+    public var link: String?
+    public var formattedLink: String?
+    public var displayLink: String?
+    public var ratingvalue: String?
+    public var reviewCount: Int?
     
-    var metatags: Dictionary<String, Any?>?
-    var key: String?
-    var value: Any? {
+    public var metatags: Dictionary<String, Any?>?
+    public var key: String?
+    public var value: Any? {
         didSet {
             NSLog("KEY: \(String(describing: key))")
             metatags?[key!] = value
@@ -35,10 +35,14 @@ struct AutoSearchResult {
             }
         }
     }
-    var keyArray: Array<String>?
-    var kvDict: Dictionary<String, Any?>?
+    public var keyArray: Array<String>?
+    public var kvDict: Dictionary<String, Any?>?
     
-    mutating func toString() -> String {
+    public init() {
+        
+    }
+    
+    public mutating func toString() -> String {
         var s = String()
         //"--------\n\n"
        

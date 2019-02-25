@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AutoSearchConst {
+public struct AutoSearchConst {
     
     public static let GOOGLE_HOST = "https://www.googleapis.com/customsearch/v1?"
     public static let GOOGLE_API_KEY = "AIzaSyBdeS6nNEse3XlSeDWXFGUNAvPqjdLSz3A"

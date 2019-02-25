@@ -16,7 +16,7 @@ import UIKit
 
 let DEBUG = true
 
-class WebClient {
+public class WebClient {
     
     enum WebServiceError: Error {
         case emptyAccessToken
@@ -25,55 +25,12 @@ class WebClient {
         case noDataFound
     }
     
-    static var access_token: String?
-    
-    func getArray(urlPath: String, successBlock: @escaping ([Dictionary<String, Any>]?)->(), failureBlock: @escaping (String) -> ()) throws {
+    public init() {
         
-        guard WebClient.access_token?.isEmpty == false else {
-            NSLog("WebServiceError.emptyAccessToken")
-            throw WebServiceError.emptyAccessToken
-        }
-        
-        var request = URLRequest(url: URL(string: urlPath)!)
-        request.httpMethod = "GET"
-        
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        if DEBUG {
-            NSLog("GET Array: \(request)")
-        }
-        
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        var jsonResp: [Dictionary<String, Any>]?
-        let task = session.dataTask(with: request) { (data, response, error) in
-            guard let data = data, error == nil else {
-                DispatchQueue.main.async(execute: {
-                    failureBlock("error=\(error!)")
-                })
-                return
-            }
-            
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
-                if DEBUG {
-                    NSLog("statusCode should be 200, but is \(httpStatus.statusCode)")
-                    NSLog("response = \(response!)")
-                }
-                DispatchQueue.main.async(execute: {
-                    failureBlock("response = \(response!)")
-                })
-                return
-            }
-            let parser = JsonParser()
-            jsonResp = parser.parseArray(data: data)
-            NSLog("JSON ARRAY: \(jsonResp!)")
-            successBlock(jsonResp)
-        }
-        task.resume()
     }
     
     // ---- GET -----------------------------------------------------------
-    func get(urlPath: String, successBlock: @escaping (Dictionary<String, Any>)->(), failureBlock: @escaping (String) -> ()) throws {
+    public func get(urlPath: String, successBlock: @escaping (Dictionary<String, Any>)->(), failureBlock: @escaping (String) -> ()) throws {
         
         var request = URLRequest(url: URL(string: urlPath)!)
         request.httpMethod = "GET"
@@ -116,15 +73,13 @@ class WebClient {
     }
     
     // ---- POST ----------------------------------------------------------------------
-    func post(urlPath: String, body: NSMutableData, contentType: String, successBlock: @escaping (Dictionary<String, Any>)->(), failureBlock: @escaping (String) -> ()) throws {
-        guard WebClient.access_token?.isEmpty == false else {
-            throw WebServiceError.emptyAccessToken
-        }
-        
+    public func post(urlPath: String, body: NSMutableData, contentType: String, successBlock: @escaping (Dictionary<String, Any>)->(), failureBlock: @escaping (String) -> ()) throws {
+       
         var request = URLRequest(url: URL(string: urlPath)!)
         request.httpMethod = "POST"
         request.addValue(contentType, forHTTPHeaderField: "Content-Type")
         request.addValue("\(body.length)", forHTTPHeaderField: "Content-Length")
+        request.addValue("com.rcal.See-Me-Soon", forHTTPHeaderField: "x-ios-bundle-identifier")
         
         request.httpBody = body as Data
         

@@ -11,7 +11,6 @@
 		2A51D6B92217E1A300F9DDE6 /* AutoSearchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6B82217E1A300F9DDE6 /* AutoSearchKitTests.swift */; };
 		2A51D6BB2217E1A300F9DDE6 /* AutoSearchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A51D6AD2217E1A300F9DDE6 /* AutoSearchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A51D6C82217E1EA00F9DDE6 /* AutoSearchConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */; };
-		2A51D6C92217E1EA00F9DDE6 /* AutoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6C62217E1E900F9DDE6 /* AutoSearchViewController.swift */; };
 		2A51D6CA2217E1EA00F9DDE6 /* AutoSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */; };
 		2A51D6CF2217E22600F9DDE6 /* GeofencedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6CC2217E22500F9DDE6 /* GeofencedViewController.swift */; };
 		2A51D6D02217E22600F9DDE6 /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6CD2217E22500F9DDE6 /* AddGeotificationViewController.swift */; };
@@ -39,7 +38,6 @@
 		2A51D6B82217E1A300F9DDE6 /* AutoSearchKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchKitTests.swift; sourceTree = "<group>"; };
 		2A51D6BA2217E1A300F9DDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSearchConst.swift; sourceTree = "<group>"; };
-		2A51D6C62217E1E900F9DDE6 /* AutoSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSearchViewController.swift; sourceTree = "<group>"; };
 		2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoSearchResult.swift; sourceTree = "<group>"; };
 		2A51D6CC2217E22500F9DDE6 /* GeofencedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofencedViewController.swift; sourceTree = "<group>"; };
 		2A51D6CD2217E22500F9DDE6 /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				2A51D6CB2217E1FD00F9DDE6 /* GeoLoc */,
 				2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */,
 				2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */,
-				2A51D6C62217E1E900F9DDE6 /* AutoSearchViewController.swift */,
 			);
 			path = AutoSearch;
 			sourceTree = "<group>";
@@ -249,7 +246,6 @@
 				2A51D6C82217E1EA00F9DDE6 /* AutoSearchConst.swift in Sources */,
 				2A51D6D52217E28A00F9DDE6 /* BrowserViewController.swift in Sources */,
 				2A51D6CA2217E1EA00F9DDE6 /* AutoSearchResult.swift in Sources */,
-				2A51D6C92217E1EA00F9DDE6 /* AutoSearchViewController.swift in Sources */,
 				2A51D6D02217E22600F9DDE6 /* AddGeotificationViewController.swift in Sources */,
 				2A51D6CF2217E22600F9DDE6 /* GeofencedViewController.swift in Sources */,
 				2A51D6D12217E22600F9DDE6 /* GeofencedPoint.swift in Sources */,
