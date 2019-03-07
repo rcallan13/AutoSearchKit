@@ -139,7 +139,6 @@
 		2A51D6D22217E25A00F9DDE6 /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				2A51D6D72217E31600F9DDE6 /* JsonParser.swift */,
 				2A51D6D32217E28A00F9DDE6 /* BrowserViewController.swift */,
 				2A51D6D42217E28A00F9DDE6 /* WebClient.swift */,
 			);
@@ -149,6 +148,7 @@
 		2A659C8B22316D4900D67539 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2A51D6D72217E31600F9DDE6 /* JsonParser.swift */,
 				2A659C8C22316D5500D67539 /* Util.swift */,
 			);
 			path = Util;
