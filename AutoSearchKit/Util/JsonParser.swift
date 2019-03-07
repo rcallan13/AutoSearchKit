@@ -1,10 +1,11 @@
 //
 //  JsonParser.swift
-//  See Me Soon
+//  pika
 //
-//  Created by Ron Allan on 2019-02-05.
+//  Created by Ron Allan on 2019-03-06.
 //  Copyright © 2019 RCAL Software Solutions. All rights reserved.
 //
+
 import Foundation
 
 public class JsonParser {
@@ -49,4 +50,3 @@ public class JsonParser {
         return arr
     }
 }
-

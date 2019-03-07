@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/ronallan/dev/apps/AutoSearchKit/build/Debug-iphonesimulator/AutoSearchKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AutoSearchKit-Swift.h",
+          'external-contents': "/Users/ronallan/dev/apps/AutoSearchKit/build/Debug-iphonesimulator/AutoSearchKit.framework/Headers/AutoSearchKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AutoSearchKit.h",
+          'external-contents': "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/AutoSearchKit.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/ronallan/dev/apps/AutoSearchKit/build/Debug-iphonesimulator/AutoSearchKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/ronallan/dev/apps/AutoSearchKit/build/AutoSearchKit.build/Debug-iphonesimulator/AutoSearchKit.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

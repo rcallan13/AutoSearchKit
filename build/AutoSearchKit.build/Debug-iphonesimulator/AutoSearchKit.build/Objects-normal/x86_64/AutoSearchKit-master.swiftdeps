@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "3f8be90bae6a29ebbedf9747780022ab"
+build_time: [1551761468, 910001000]
+inputs:
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/AutoSearch/AutoSearchConst.swift": [1551105925, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/Web/BrowserViewController.swift": [1549744794, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/AutoSearch/AutoSearchResult.swift": [1551106234, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/AutoSearch/GeoLoc/AddGeotificationViewController.swift": [1549748952, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/AutoSearch/GeoLoc/GeofencedViewController.swift": [1550297917, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/AutoSearch/GeoLoc/GeofencedPoint.swift": [1549748972, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/Web/WebClient.swift": [1551106097, 0]
+  "/Users/ronallan/dev/apps/AutoSearchKit/AutoSearchKit/Web/JsonParser.swift": [1549744794, 0]

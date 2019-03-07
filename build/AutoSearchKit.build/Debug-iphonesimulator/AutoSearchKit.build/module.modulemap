@@ -1,0 +1,11 @@
+framework module AutoSearchKit {
+  umbrella header "AutoSearchKit.h"
+
+  export *
+  module * { export * }
+}
+
+module AutoSearchKit.Swift {
+    header "AutoSearchKit-Swift.h"
+    requires objc
+}

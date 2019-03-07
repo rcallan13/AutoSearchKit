@@ -1,0 +1,10 @@
+framework module AutoSearchKit {
+  umbrella header "AutoSearchKit.h"
+
+  export *
+  module * { export * }
+}
+
+module AutoSearchKit.__Swift {
+    exclude header "AutoSearchKit-Swift.h"
+}
