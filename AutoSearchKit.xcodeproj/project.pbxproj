@@ -21,7 +21,6 @@
 		2A659C8322316CAE00D67539 /* AutoSearchEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */; };
 		2A659C8522316CD800D67539 /* AutoSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8422316CD800D67539 /* AutoSearchManager.swift */; };
 		2A659C8722316CFA00D67539 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8622316CFA00D67539 /* Response.swift */; };
-		2A659C8A22316D2B00D67539 /* autosearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A659C8922316D2B00D67539 /* autosearch.json */; };
 		2A659C8D22316D5500D67539 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8C22316D5500D67539 /* Util.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchEntry.swift; sourceTree = "<group>"; };
 		2A659C8422316CD800D67539 /* AutoSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchManager.swift; sourceTree = "<group>"; };
 		2A659C8622316CFA00D67539 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		2A659C8922316D2B00D67539 /* autosearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = autosearch.json; sourceTree = "<group>"; };
 		2A659C8C22316D5500D67539 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				2A659C8B22316D4900D67539 /* Util */,
-				2A659C8822316D1000D67539 /* assets */,
 				2A51D6D22217E25A00F9DDE6 /* Web */,
 				2A51D6C42217E1B100F9DDE6 /* AutoSearch */,
 				2A51D6AD2217E1A300F9DDE6 /* AutoSearchKit.h */,
@@ -147,14 +144,6 @@
 				2A51D6D42217E28A00F9DDE6 /* WebClient.swift */,
 			);
 			path = Web;
-			sourceTree = "<group>";
-		};
-		2A659C8822316D1000D67539 /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				2A659C8922316D2B00D67539 /* autosearch.json */,
-			);
-			path = assets;
 			sourceTree = "<group>";
 		};
 		2A659C8B22316D4900D67539 /* Util */ = {
@@ -257,7 +246,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A659C8A22316D2B00D67539 /* autosearch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

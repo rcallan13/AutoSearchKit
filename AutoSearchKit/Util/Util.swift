@@ -24,6 +24,7 @@ class Util {
                 return response
             } catch {
                 // contents could not be loaded
+                NSLog("Error: \(error)")
             }
         }
         return nil
