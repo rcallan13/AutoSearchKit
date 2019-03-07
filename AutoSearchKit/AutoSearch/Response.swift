@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Response: Codable {
+public struct Response: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case searchEntries = "search_entries"

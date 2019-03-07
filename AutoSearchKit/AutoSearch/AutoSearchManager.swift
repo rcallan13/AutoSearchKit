@@ -10,9 +10,9 @@ import Foundation
 
 public class AutoSearchManager {
     
-    var autoSearchParams: Response?
+    public var autoSearchParams: Response?
     
-    init() {
+    public init() {
         parseParameters()
     }
     

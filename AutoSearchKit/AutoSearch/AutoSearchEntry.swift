@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AutoSearchEntry: Codable {
+public struct AutoSearchEntry: Codable {
     let searchName: String?
     let expression: String?
     let location: String?
