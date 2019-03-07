@@ -18,6 +18,11 @@
 		2A51D6D52217E28A00F9DDE6 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D32217E28A00F9DDE6 /* BrowserViewController.swift */; };
 		2A51D6D62217E28A00F9DDE6 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D42217E28A00F9DDE6 /* WebClient.swift */; };
 		2A51D6D82217E31600F9DDE6 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D72217E31600F9DDE6 /* JsonParser.swift */; };
+		2A659C8322316CAE00D67539 /* AutoSearchEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */; };
+		2A659C8522316CD800D67539 /* AutoSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8422316CD800D67539 /* AutoSearchManager.swift */; };
+		2A659C8722316CFA00D67539 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8622316CFA00D67539 /* Response.swift */; };
+		2A659C8A22316D2B00D67539 /* autosearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A659C8922316D2B00D67539 /* autosearch.json */; };
+		2A659C8D22316D5500D67539 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8C22316D5500D67539 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		2A51D6D32217E28A00F9DDE6 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		2A51D6D42217E28A00F9DDE6 /* WebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		2A51D6D72217E31600F9DDE6 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchEntry.swift; sourceTree = "<group>"; };
+		2A659C8422316CD800D67539 /* AutoSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchManager.swift; sourceTree = "<group>"; };
+		2A659C8622316CFA00D67539 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		2A659C8922316D2B00D67539 /* autosearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = autosearch.json; sourceTree = "<group>"; };
+		2A659C8C22316D5500D67539 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,8 @@
 		2A51D6AC2217E1A300F9DDE6 /* AutoSearchKit */ = {
 			isa = PBXGroup;
 			children = (
+				2A659C8B22316D4900D67539 /* Util */,
+				2A659C8822316D1000D67539 /* assets */,
 				2A51D6D22217E25A00F9DDE6 /* Web */,
 				2A51D6C42217E1B100F9DDE6 /* AutoSearch */,
 				2A51D6AD2217E1A300F9DDE6 /* AutoSearchKit.h */,
@@ -110,6 +122,9 @@
 				2A51D6CB2217E1FD00F9DDE6 /* GeoLoc */,
 				2A51D6C52217E1E900F9DDE6 /* AutoSearchConst.swift */,
 				2A51D6C72217E1E900F9DDE6 /* AutoSearchResult.swift */,
+				2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */,
+				2A659C8422316CD800D67539 /* AutoSearchManager.swift */,
+				2A659C8622316CFA00D67539 /* Response.swift */,
 			);
 			path = AutoSearch;
 			sourceTree = "<group>";
@@ -132,6 +147,22 @@
 				2A51D6D42217E28A00F9DDE6 /* WebClient.swift */,
 			);
 			path = Web;
+			sourceTree = "<group>";
+		};
+		2A659C8822316D1000D67539 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				2A659C8922316D2B00D67539 /* autosearch.json */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		2A659C8B22316D4900D67539 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2A659C8C22316D5500D67539 /* Util.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A659C8A22316D2B00D67539 /* autosearch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,11 +275,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A659C8322316CAE00D67539 /* AutoSearchEntry.swift in Sources */,
 				2A51D6C82217E1EA00F9DDE6 /* AutoSearchConst.swift in Sources */,
 				2A51D6D52217E28A00F9DDE6 /* BrowserViewController.swift in Sources */,
 				2A51D6CA2217E1EA00F9DDE6 /* AutoSearchResult.swift in Sources */,
 				2A51D6D02217E22600F9DDE6 /* AddGeotificationViewController.swift in Sources */,
 				2A51D6CF2217E22600F9DDE6 /* GeofencedViewController.swift in Sources */,
+				2A659C8522316CD800D67539 /* AutoSearchManager.swift in Sources */,
+				2A659C8D22316D5500D67539 /* Util.swift in Sources */,
+				2A659C8722316CFA00D67539 /* Response.swift in Sources */,
 				2A51D6D12217E22600F9DDE6 /* GeofencedPoint.swift in Sources */,
 				2A51D6D62217E28A00F9DDE6 /* WebClient.swift in Sources */,
 				2A51D6D82217E31600F9DDE6 /* JsonParser.swift in Sources */,
