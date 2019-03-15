@@ -22,30 +22,16 @@ public struct AutoSearchResult {
     
     public var metatags: Dictionary<String, Any?>?
     public var key: String?
-    public var value: Any? {
-        didSet {
-            NSLog("KEY: \(String(describing: key))")
-            metatags?[key!] = value
-            if key == "cse_thumbnail" {
-                if let arr = value as? NSArray {
-                    for i in arr {
-                        NSLog("THUMB: \(i)")
-                    }
-                }
-            }
-        }
-    }
+    public var value: Any?
     public var keyArray: Array<String>?
     public var kvDict: Dictionary<String, Any?>?
     
     public init() {
-        
     }
     
     public mutating func toString() -> String {
         var s = String()
-        //"--------\n\n"
-       
+        
         var items = String()
         for k in keyArray! {
             //items.append(k)

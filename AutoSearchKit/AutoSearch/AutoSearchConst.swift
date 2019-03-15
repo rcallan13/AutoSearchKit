@@ -18,4 +18,18 @@ public struct AutoSearchConst {
     public static let GOOGLE_SEARCH_BASE = GOOGLE_HOST + "key=" + GOOGLE_API_KEY + "&cx="
     public static let GOOGLE_SITE = GOOGLE_SEARCH_BASE + GOOGLE_CX
     public static let YELP_SITE = GOOGLE_SEARCH_BASE + YELP_CX
+    
+    public static let displayLinkKey = "displayLink"
+    public static let formattedUrlKey = "formattedUrl"
+    public static let linkKey = "link"
+    public static let titleKey = "title"
+    public static let htmlTitleKey = "htmlTitle"
+    public static let pagemapKey = "pagemap"
+    
+    public static let aggregatingKey = "aggregaterating"
+    public static let ratingvalueKey = "ratingvalue"
+    public static let reviewCountKey = "reviewcount"
+    public static let cseImageKey = "cse_image"
+    public static let srcKey = "src"
+    public static let cseThumbnailKey = "cse_thumbnail"
 }
