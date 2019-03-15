@@ -78,7 +78,7 @@ public class AutoSearchManager: AutoSearchPipeLineDelegate {
                 }
                 
                 let parser = AutoSearchParser(response: resp)
-                parser.parseResults(delegate: self)
+                parser.parseResults(searchUrl: urlPath, delegate: self)
                 
             }, failureBlock: {(_ resp: String) in
                 NSLog("Failure: " + resp)
