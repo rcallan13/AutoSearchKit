@@ -19,10 +19,13 @@ protocol AutoSearchPipeLineDelegate {
 
 public class AutoSearchManager: AutoSearchPipeLineDelegate {
     
+    public var keys: [String]?
+    
     var autoSearchDelegate: AutoSearchDelegate?
     var autoSearchParams: Response?
     
     public init() {
+        keys = [String]()
         parseParameters()
     }
     
@@ -42,6 +45,7 @@ public class AutoSearchManager: AutoSearchPipeLineDelegate {
                 searchStr = searchStr.replacingOccurrences(of: " ", with: "+")
                 // GOOGLE_CX
                 selectedCx = AutoSearchConst.YELP_CX
+                keys?.append(AutoSearchConst.GOOGLE_SEARCH_BASE + selectedCx + "&q=" + searchStr)
                 DispatchQueue.global(qos: .utility).async {
                     self.performSearch(AutoSearchConst.GOOGLE_SEARCH_BASE + selectedCx + "&q=" + searchStr)
                 }

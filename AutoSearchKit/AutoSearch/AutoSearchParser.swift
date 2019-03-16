@@ -72,8 +72,17 @@ extension Node: CustomStringConvertible {
         var text = "\(key ?? "(?)")=\(value ?? "(?)")"
         
         if !children.isEmpty {
-            text += " {" + children.map { $0.description }.joined(separator: ", ") + "} "
+            text += " {"
+            for child in children {
+                if (children.last?.value as? String) != (child.value as? String) {
+                    text += child.description + ", "
+                } else {
+                    text += child.description
+                }
+            }
+            text += "} "
         }
+
         return text
     }
 }

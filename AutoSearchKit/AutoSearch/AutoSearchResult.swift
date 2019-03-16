@@ -10,6 +10,7 @@ import Foundation
 
 public struct AutoSearchResult {
     public static var count = 1
+    public var searchPath: String?
     public var title: String?
     public var htmlTitle: String?
     public var thumbnail: String?
