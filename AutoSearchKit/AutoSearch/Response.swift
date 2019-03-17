@@ -14,5 +14,5 @@ public struct Response: Codable {
         case searchEntries = "search_entries"
     }
     
-    let searchEntries: [AutoSearchEntry]
+    public let searchEntries: [AutoSearchEntry]
 }

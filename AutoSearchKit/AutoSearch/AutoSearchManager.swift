@@ -22,7 +22,7 @@ public class AutoSearchManager: AutoSearchPipeLineDelegate {
     public var keys: [String]?
     
     var autoSearchDelegate: AutoSearchDelegate?
-    var autoSearchParams: Response?
+    public var autoSearchParams: Response?
     
     public init() {
         keys = [String]()

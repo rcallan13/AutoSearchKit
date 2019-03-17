@@ -20,6 +20,7 @@
 		2A51D6D82217E31600F9DDE6 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A51D6D72217E31600F9DDE6 /* JsonParser.swift */; };
 		2A53DC72223AE757003BC573 /* AutoSearchParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53DC71223AE757003BC573 /* AutoSearchParser.swift */; };
 		2A53DC74223AEE51003BC573 /* AutoSearchProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53DC73223AEE51003BC573 /* AutoSearchProcessor.swift */; };
+		2A53DC76223E9040003BC573 /* SearchParamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A53DC75223E9040003BC573 /* SearchParamCell.swift */; };
 		2A659C8322316CAE00D67539 /* AutoSearchEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */; };
 		2A659C8522316CD800D67539 /* AutoSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8422316CD800D67539 /* AutoSearchManager.swift */; };
 		2A659C8722316CFA00D67539 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A659C8622316CFA00D67539 /* Response.swift */; };
@@ -53,6 +54,7 @@
 		2A51D6D72217E31600F9DDE6 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		2A53DC71223AE757003BC573 /* AutoSearchParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchParser.swift; sourceTree = "<group>"; };
 		2A53DC73223AEE51003BC573 /* AutoSearchProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchProcessor.swift; sourceTree = "<group>"; };
+		2A53DC75223E9040003BC573 /* SearchParamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParamCell.swift; sourceTree = "<group>"; };
 		2A659C8222316CAE00D67539 /* AutoSearchEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchEntry.swift; sourceTree = "<group>"; };
 		2A659C8422316CD800D67539 /* AutoSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSearchManager.swift; sourceTree = "<group>"; };
 		2A659C8622316CFA00D67539 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2A659C8622316CFA00D67539 /* Response.swift */,
 				2A53DC71223AE757003BC573 /* AutoSearchParser.swift */,
 				2A53DC73223AEE51003BC573 /* AutoSearchProcessor.swift */,
+				2A53DC75223E9040003BC573 /* SearchParamCell.swift */,
 			);
 			path = AutoSearch;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				2A51D6D12217E22600F9DDE6 /* GeofencedPoint.swift in Sources */,
 				2A51D6D62217E28A00F9DDE6 /* WebClient.swift in Sources */,
 				2A51D6D82217E31600F9DDE6 /* JsonParser.swift in Sources */,
+				2A53DC76223E9040003BC573 /* SearchParamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

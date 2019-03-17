@@ -9,15 +9,19 @@
 import Foundation
 
 public struct AutoSearchEntry: Codable {
-    let searchName: String?
-    let expression: String?
-    let location: String?
-    let flavor: String?
+    public let searchName: String?
+    public let expression: String?
+    public let location: String?
+    public let flavor: String?
     
     private enum CodingKeys: String, CodingKey {
         case searchName = "search_name"
         case expression
         case location
         case flavor
+    }
+    
+    public func toString() -> String {
+        return searchName! + ": " + expression! + " @ " + location!
     }
 }

@@ -44,7 +44,7 @@ class AutoSearchProcessor {
             searchResult.searchPath = searchPath
             searchResult.keyArray = Array<String>()
             searchResult.kvDict = Dictionary<String, Any?>()
-            NSLog("Item: \(String(describing: item))")
+            //NSLog("Item: \(String(describing: item))")
             
             searchResult.displayLink = item[AutoSearchConst.displayLinkKey] as? String
             searchResult.formattedLink = item[AutoSearchConst.formattedUrlKey] as? String
