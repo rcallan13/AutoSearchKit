@@ -9,12 +9,12 @@
 import Foundation
 
 public protocol AutoSearchDelegate {
-    func onSearchResults(_ searchResults: [AutoSearchResult]?)
+    func onSearchResults(_ searchResults: [AnalyzedResult]?)
 }
 
 protocol AutoSearchPipeLineDelegate {
     func onParserResults(_ node: Node?)
-    func onProcessorResults(_ searchResults: [AutoSearchResult]?)
+    func onProcessorResults(_ searchResults: [AnalyzedResult]?)
 }
 
 public class AutoSearchManager: AutoSearchPipeLineDelegate {
@@ -59,7 +59,7 @@ public class AutoSearchManager: AutoSearchPipeLineDelegate {
         processor.processResults(node)
     }
     
-    func onProcessorResults(_ searchResults: [AutoSearchResult]?) {
+    func onProcessorResults(_ searchResults: [AnalyzedResult]?) {
         self.autoSearchDelegate?.onSearchResults(searchResults)
     }
     

@@ -8,6 +8,6 @@
 
 import Foundation
 
-class AnalyzedResult: AutoSearchResult {
+public class AnalyzedResult: AutoSearchResult {
     
 }
