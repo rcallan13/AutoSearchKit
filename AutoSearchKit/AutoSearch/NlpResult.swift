@@ -1,5 +1,5 @@
 //
-//  AnalyzedResults.swift
+//  NlpResult.swift
 //  AutoSearchKit
 //
 //  Created by Ron Allan on 2019-03-24.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-public class AnalyzedResult: AutoSearchResult {
+public class NlpResult: AutoSearchResult {
+    
     
 }

@@ -14,7 +14,7 @@ import CoreML
  */
 class AutoSearchProcessor {
     
-    var searchResults: [AnalyzedResult]?
+    var searchResults: [NlpResult]?
     var pipelineDelegate: AutoSearchPipeLineDelegate?
     
     init(pipelineDelegate: AutoSearchPipeLineDelegate?) {
@@ -22,7 +22,7 @@ class AutoSearchProcessor {
     }
     
     func processResults(_ node: Node?) {
-        searchResults = Array<AnalyzedResult>()
+        searchResults = Array<NlpResult>()
         let searchPath = node?.key
         let children = node?.children
         for child in children! {
@@ -52,7 +52,7 @@ class AutoSearchProcessor {
                 continue
             }
             
-            let searchResult = AnalyzedResult()
+            let searchResult = NlpResult()
             AutoSearchResult.count = 1
             searchResult.searchPath = searchPath
             searchResult.keyArray = Array<String>()
