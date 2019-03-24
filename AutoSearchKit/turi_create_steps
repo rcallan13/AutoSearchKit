@@ -9,3 +9,14 @@ model.export_coreml('Poets.mlmodel')
 
 
 https://github.com/apple/turicreate
+
+Example: json doc with raw data.
+[{
+"title": "When You Are Old",
+"author": "William Butler Yeats",
+"text": "When you are old and grey and full of sleep,\nAnd nodding by the fire, take down this book,\nAnd slowly read, and dream of the soft look\nYour eyes had once, and of their shadows deep;\nHow many loved your moments of glad grace,\nAnd loved your beauty with love false or true,\nBut one man loved the pilgrim Soul in you,\nAnd loved the sorrows of your changing face;\nAnd bending down beside the glowing bars,\nMurmur, a little sadly, how Love fled\nAnd paced upon the mountains overhead\nAnd hid his face amid a crowd of stars."
+}, {
+"title": "On being asked for a War Poem",
+"author": "William Butler Yeats",
+"text": "I think it better that in times like these\nA poet's mouth be silent, for in truth\nWe have no gift to set a statesman right;\nHe has had enough of meddling who can please\nA young girl in the indolence of her youth,\nOr an old man upon a winter’s night."
+}]
