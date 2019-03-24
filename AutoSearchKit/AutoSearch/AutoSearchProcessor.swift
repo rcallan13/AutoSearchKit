@@ -7,10 +7,14 @@
 //
 
 import Foundation
+import CoreML
 
+/**
+ * Contains the NLP processing and analysis
+ */
 class AutoSearchProcessor {
     
-    var searchResults: [AutoSearchResult]?
+    var searchResults: [AnalyzedResult]?
     var pipelineDelegate: AutoSearchPipeLineDelegate?
     
     init(pipelineDelegate: AutoSearchPipeLineDelegate?) {
@@ -18,7 +22,7 @@ class AutoSearchProcessor {
     }
     
     func processResults(_ node: Node?) {
-        searchResults = Array<AutoSearchResult>()
+        searchResults = Array<AnalyzedResult>()
         let searchPath = node?.key
         let children = node?.children
         for child in children! {
@@ -30,7 +34,16 @@ class AutoSearchProcessor {
                 parseItems(searchPath, items: value)
             }
         }
+        //pipelineDelegate?.onProcessorResults(searchResults)
+        analyzeResult()
         pipelineDelegate?.onProcessorResults(searchResults)
+    }
+    
+    private func analyzeResult() {
+        // take the searchResults and turn them into a json doc
+        // of the format required by the model.
+        // Analyze the results against the model and return the analysis to the caller.
+        
     }
     
     private func parseItems(_ searchPath: String?, items: Any?) {
@@ -39,7 +52,7 @@ class AutoSearchProcessor {
                 continue
             }
             
-            var searchResult = AutoSearchResult()
+            let searchResult = AnalyzedResult()
             AutoSearchResult.count = 1
             searchResult.searchPath = searchPath
             searchResult.keyArray = Array<String>()
@@ -73,5 +86,38 @@ class AutoSearchProcessor {
             }
             self.searchResults?.append(searchResult)
         }
+    }
+}
+
+extension AutoSearchProcessor {
+    
+    func analyze(text: String) {
+        /*
+        let counts = wordCounts(text: text)
+        let model = Poets()
+        do {
+            let prediction = try model.prediction(text: counts)
+            updateWithPrediction(poet: prediction.author,
+                                 probabilities: prediction.authorProbability)
+        } catch {
+            print(error)
+        }
+        */
+    }
+    
+    func wordCounts(text: String) -> [String: Double] {
+        var bagOfWords: [String: Double] = [:]
+        
+        let tagger = NSLinguisticTagger(tagSchemes: [.tokenType], options: 0)
+        let range = NSRange(text.startIndex..., in: text)
+        let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace]
+        tagger.string = text
+        
+        tagger.enumerateTags(in: range, unit: .word, scheme: .tokenType, options: options) { _, tokenRange, _ in
+            let word = (text as NSString).substring(with: tokenRange)
+            bagOfWords[word, default: 0] += 1
+        }
+        
+        return bagOfWords
     }
 }

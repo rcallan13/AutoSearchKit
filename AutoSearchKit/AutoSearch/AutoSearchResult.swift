@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct AutoSearchResult {
+public class AutoSearchResult {
     public static var count = 1
     public var searchPath: String?
     public var title: String?
@@ -30,7 +30,7 @@ public struct AutoSearchResult {
     public init() {
     }
     
-    public mutating func toString() -> String {
+    public func toString() -> String {
         var s = String()
         
         var items = String()
