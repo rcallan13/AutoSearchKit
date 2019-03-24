@@ -1,0 +1,11 @@
+virtualenv venv
+source venv/bin/activate
+pip install -U turicreate
+python
+import turicreate as tc
+data = tc.SFrame.read_json('corpus.json', orient='records')
+model = tc.text_classifier.create(data, 'author', features=['text'])
+model.export_coreml('Poets.mlmodel')
+
+
+https://github.com/apple/turicreate
