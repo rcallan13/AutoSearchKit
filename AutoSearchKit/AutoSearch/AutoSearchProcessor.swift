@@ -87,6 +87,11 @@ class AutoSearchProcessor {
             self.searchResults?.append(searchResult)
         }
     }
+    
+    private func modelToJson(_ searchResults: [NlpResult]?) -> String? {
+        
+        return nil
+    }
 }
 
 extension AutoSearchProcessor {
@@ -105,8 +110,8 @@ extension AutoSearchProcessor {
         */
     }
     
-    func wordCounts(text: String) -> [String: Double] {
-        var bagOfWords: [String: Double] = [:]
+    func wordCount(text: String) -> [String: Double] {
+        var dictionary: [String: Double] = [:]
         
         let tagger = NSLinguisticTagger(tagSchemes: [.tokenType], options: 0)
         let range = NSRange(text.startIndex..., in: text)
@@ -115,9 +120,9 @@ extension AutoSearchProcessor {
         
         tagger.enumerateTags(in: range, unit: .word, scheme: .tokenType, options: options) { _, tokenRange, _ in
             let word = (text as NSString).substring(with: tokenRange)
-            bagOfWords[word, default: 0] += 1
+            dictionary[word, default: 0] += 1
         }
         
-        return bagOfWords
+        return dictionary
     }
 }
