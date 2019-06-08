@@ -24,22 +24,22 @@ enum EventType: String {
     case onExit = "On Exit"
 }
 
-class GeofencedPoint: NSObject, NSCoding, MKAnnotation {
+public class GeofencedPoint: NSObject, NSCoding, MKAnnotation {
     
-    var coordinate: CLLocationCoordinate2D
-    var radius: CLLocationDistance
+    public var coordinate: CLLocationCoordinate2D
+    public var radius: CLLocationDistance
     var identifier: String
     var note: String
     var eventType: EventType
     
-    var title: String? {
+    var pointTitle: String? {
         if note.isEmpty {
             return "No Note"
         }
         return note
     }
     
-    var subtitle: String? {
+    var pointSubtitle: String? {
         let eventTypeString = eventType.rawValue
         return "Radius: \(radius)m - \(eventTypeString)"
     }
@@ -53,7 +53,7 @@ class GeofencedPoint: NSObject, NSCoding, MKAnnotation {
     }
     
     // MARK: NSCoding
-    required init?(coder decoder: NSCoder) {
+    required public init?(coder decoder: NSCoder) {
         let latitude = decoder.decodeDouble(forKey: GeoKey.latitude)
         let longitude = decoder.decodeDouble(forKey: GeoKey.longitude)
         coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -63,7 +63,7 @@ class GeofencedPoint: NSObject, NSCoding, MKAnnotation {
         eventType = EventType(rawValue: decoder.decodeObject(forKey: GeoKey.eventType) as! String)!
     }
     
-    func encode(with coder: NSCoder) {
+    public func encode(with coder: NSCoder) {
         coder.encode(coordinate.latitude, forKey: GeoKey.latitude)
         coder.encode(coordinate.longitude, forKey: GeoKey.longitude)
         coder.encode(radius, forKey: GeoKey.radius)
